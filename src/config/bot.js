@@ -24,7 +24,7 @@ export const botConfig = {
     activities: [
       {
         name: "Custom Status", // required by Discord API, not shown in the client
-        state: "stalking",     // this is what people actually see
+        state: "Waiting for a Command!",     // this is what people actually see
         type: 4,               // Custom
       },
     ],
@@ -161,7 +161,7 @@ export const botConfig = {
   economy: {
     currency: {
       // Currency display name.
-      name: "coins",
+      name: "BFCS Coins",
       // Plural display name.
       namePlural: "coins",
       // Currency symbol shown in balances.
@@ -450,7 +450,7 @@ export const botConfig = {
   features: {
     // Core systems.
     economy: true,
-    leveling: true,
+    leveling: false,
     moderation: true,
     logging: true,
     welcome: true,
