@@ -46,7 +46,7 @@ export default {
                         .setRequired(false)
                 )
         )
-        .addSubcommand(subcommand =>
+               .addSubcommand(subcommand =>
             subcommand
                 .setName('list')
                 .setDescription('List all birthdays in the server')
@@ -54,13 +54,20 @@ export default {
         .addSubcommand(subcommand =>
             subcommand
                 .setName('remove')
-                .setDescription('Remove your birthday')
+                .setDescription('Remove your birthday or another member\'s birthday.')
+                .addUserOption(option =>
+                    option
+                        .setName('target')
+                        .setDescription('The user whose birthday you want to remove (Admin or Bot Owner only)')
+                        .setRequired(false)
+                )
         )
         .addSubcommand(subcommand =>
             subcommand
                 .setName('next')
                 .setDescription('Show upcoming birthdays')
         )
+
         .addSubcommand(subcommand =>
             subcommand
                 .setName('setchannel')
