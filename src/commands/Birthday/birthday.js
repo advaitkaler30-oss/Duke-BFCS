@@ -10,6 +10,7 @@ import nextBirthdays from './modules/next_birthdays.js';
 import birthdaySetchannel from './modules/birthday_setchannel.js';
 
 import { InteractionHelper } from '../../utils/interactionHelper.js';
+
 export default {
     data: new SlashCommandBuilder()
         .setName('birthday')
@@ -17,7 +18,7 @@ export default {
         .addSubcommand(subcommand =>
             subcommand
                 .setName('set')
-                .setDescription('Set your birthday')
+                .setDescription('Set your birthday or assign a birthday to another server member.')
                 .addIntegerOption(option =>
                     option
                         .setName('month')
@@ -33,6 +34,13 @@ export default {
                         .setRequired(true)
                         .setMinValue(1)
                         .setMaxValue(31)
+                )
+                // ➕ THIS ADDS THE NEW CHOOSE USER BOX IN DISCORD UI MENU
+                .addUserOption(option =>
+                    option
+                        .setName('target')
+                        .setDescription('The user whose birthday you want to set (Admin or Bot Owner only)')
+                        .setRequired(false)
                 )
         )
         .addSubcommand(subcommand =>
