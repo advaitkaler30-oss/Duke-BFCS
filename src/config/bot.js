@@ -531,7 +531,6 @@ export const BotConfig = botConfig;
 
 const COMMAND_CATEGORY_FEATURE_MAP = {
   birthday: "birthday",
-  birthday_lower: "birthday",
   community: "community",
   economy: "economy",
   fun: "fun",
