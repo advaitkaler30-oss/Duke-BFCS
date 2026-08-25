@@ -45,7 +45,7 @@ export const botConfig = {
     deleteCommands: false,
 
     // Optional server ID retained for tutorial compatibility; not used for command registration.
-    testGuildId: process.env.TEST_GUILD_ID,
+    testGuildId: process.env.GUILD_ID,
 
     // When true (or MAINTENANCE_MODE=true), only bot owners can run commands.
     maintenanceMode: process.env.MAINTENANCE_MODE === "true",
