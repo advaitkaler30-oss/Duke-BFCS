@@ -530,24 +530,24 @@ if (configErrors.length > 0) {
 export const BotConfig = botConfig;
 
 const COMMAND_CATEGORY_FEATURE_MAP = {
-  birthday: "Birthday",           // 🔄 Fixed to match your folder
-  community: "Community",         // 🔄 Fixed
-  economy: "Economy",             // 🔄 Fixed
-  fun: "Fun",                     // 🔄 Fixed
-  giveaway: "Giveaway",           // 🔄 Fixed: folder has no "s" and starts with Capital G
-  jointocreate: "JoinToCreate",   // 🔄 Fixed: Capital J, T, and C
-  leveling: "Leveling",           // 🔄 Fixed
-  logging: "Logging",             // 🔄 Fixed
-  moderation: "Moderation",       // 🔄 Fixed
-  music: "Music",                 // 🔄 Fixed
-  reaction_roles: "Reaction_roles", // 🔄 Fixed: Matches your folder with an underscore and capital R
-  search: "Search",               // 🔄 Fixed
-  serverstats: "ServerStats",     // 🔄 Fixed: Changed from "counter" to match folder name
-  ticket: "Ticket",               // 🔄 Fixed: folder has no "s" and starts with Capital T
-  tools: "Tools",                 // 🔄 Fixed
-  utility: "Utility",             // 🔄 Fixed
-  verification: "Verification",   // 🔄 Fixed
-  welcome: "Welcome",             // 🔄 Fixed
+  birthday: "birthday",
+  community: "community",
+  economy: "economy",
+  fun: "fun",
+  giveaway: "giveaways",
+  jointocreate: "joinToCreate",
+  leveling: "leveling",
+  logging: "logging",
+  moderation: "moderation",
+  music: "music",
+  reaction_roles: "reactionRoles",
+  search: "search",
+  serverstats: "counter",
+  ticket: "tickets",
+  tools: "tools",
+  utility: "utility",
+  verification: "verification",
+  welcome: "welcome",
 };
 
 
